@@ -105,7 +105,7 @@ export default function Home() {
             <div className="flex lg:min-w-0 lg:flex-1" aria-label="Global">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">Your Company</span>
-                <img className="h-20" src="../../public/img/favicon.png" alt="" />
+                <img className="h-20" src="https://i.postimg.cc/RVHGb99c/favicon.webp" alt="" />
               </a>
             </div>
             <div className="flex lg:hidden">
@@ -142,7 +142,7 @@ export default function Home() {
                     <span className="sr-only">Your Company</span>
                     <img
                       className="h-8"
-                      src="../../public/img/favicon.png"
+                      src="https://i.postimg.cc/RVHGb99c/favicon.webp"
                       alt=""
                     />
                   </a>
@@ -385,7 +385,7 @@ export default function Home() {
             ))}
           </div>
 
-          <h2 className="text-2xl font-bold text-gray-900 mt-10">Alat Tulis Kantor</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-10">Percetakan</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
@@ -408,7 +408,7 @@ export default function Home() {
             ))}
           </div>
           
-          <h2 className="text-2xl font-bold text-gray-900 mt-10">Alat Tulis Kantor</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mt-10">Packing</h2>
 
           <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
             {callouts.map((callout) => (
@@ -430,6 +430,53 @@ export default function Home() {
               </div>
             ))}
           </div>          
+          
+          <h2 className="text-2xl font-bold text-gray-900 mt-10">Operasional</h2>
+
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            {callouts.map((callout) => (
+              <div key={callout.name} className="group relative">
+                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <img
+                    src={callout.imageSrc}
+                    alt={callout.imageAlt}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="mt-6 text-sm text-gray-500">
+                  <a href={callout.href}>
+                    <span className="absolute inset-0" />
+                    {callout.name}
+                  </a>
+                </h3>
+                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+              </div>
+            ))}
+          </div>     
+
+          
+          <h2 className="text-2xl font-bold text-gray-900 mt-10">Alat Kebersihan</h2>
+
+          <div className="mt-6 space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
+            {callouts.map((callout) => (
+              <div key={callout.name} className="group relative">
+                <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white group-hover:opacity-75 sm:aspect-w-2 sm:aspect-h-1 sm:h-64 lg:aspect-w-1 lg:aspect-h-1">
+                  <img
+                    src={callout.imageSrc}
+                    alt={callout.imageAlt}
+                    className="h-full w-full object-cover object-center"
+                  />
+                </div>
+                <h3 className="mt-6 text-sm text-gray-500">
+                  <a href={callout.href}>
+                    <span className="absolute inset-0" />
+                    {callout.name}
+                  </a>
+                </h3>
+                <p className="text-base font-semibold text-gray-900">{callout.description}</p>
+              </div>
+            ))}
+          </div>    
 
         </div>
       </div>
